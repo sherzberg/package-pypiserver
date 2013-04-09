@@ -1,0 +1,4 @@
+honcho==0.4.0
+-e hg+https://bitbucket.org/andrewmacgregor/parcel@b66ba95163c0d5f70108a695f1687114eeeaf506#egg=parcel-dev
+passlib==1.6.1
+pypiserver==1.1.0

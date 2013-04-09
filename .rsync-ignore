@@ -1,0 +1,7 @@
+*.deb
+.git
+*.pyc
+fabfile.py
+*.*~
+dev-env
+*.db
