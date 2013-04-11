@@ -1,4 +1,4 @@
-from fabric.api import task, env
+from fabric.api import task, env, put
 from parcel.deploy import Deployment
 from parcel import distro
 from parcel import tools
@@ -44,6 +44,4 @@ def deb():
     path = deploy.root_path + '/etc/init/%s.conf' % env.app_name
 
     tools.write_contents_to_remote(conf, path)
-    #this should be built into parcel, or needs an Upstart(Depployment)
-    #tools.rsync([deploy.path+'/debian/'],deploy.root_path,rsync_ignore='.rsync-ignore')
     deploy.build_package()
